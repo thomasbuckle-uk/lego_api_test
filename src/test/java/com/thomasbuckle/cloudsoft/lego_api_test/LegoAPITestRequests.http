@@ -1,0 +1,23 @@
+###
+GET http://localhost:8080/profile
+
+###
+GET http://localhost:8080/lego
+
+###
+GET http://localhost:8080/lego/1
+
+###
+GET http://localhost:8080/profile/legoEntities
+
+###
+GET http://localhost:8080/lego/area/all
+
+###
+# curl -X POST --location "http://localhost:8080/lego/new" -H 'Content-Type:application/json' -d '{"length": 4}'
+POST http://localhost:8080/lego
+Content-Type: application/json
+
+{
+  "length": 5
+}
